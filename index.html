@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The record of life</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── VIDEO INTRO ── -->
+  <div id="intro">
+    <video id="intro-video" src="movie/Layout-stickies.mp4" autoplay muted playsinline loop></video>
+    <div id="intro-scroll-hint">
+      <span>SCROLL TO ENTER</span>
+      <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="1" width="14" height="22" rx="7" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="8" cy="7" r="2" fill="currentColor"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ── MAIN CONTENT ── -->
+  <div id="main">
+
+    <nav>
+      <span class="nav-logo">THE RECORD OF LIFE</span>
+      <div class="nav-r">20 PORTRAITS &nbsp;·&nbsp; A — Y &nbsp;·&nbsp; ↗ CLICK TO VIEW FULL SET</div>
+    </nav>
+
+    <!-- Top dot strip -->
+    <div class="dot-strip-outer">
+      <div class="ds"></div><div class="ds"></div><div class="ds"></div>
+      <div class="ds"></div><div class="ds"></div>
+    </div>
+
+    <!-- Main gallery — populated by gallery.js -->
+    <div class="gallery" id="gallery"></div>
+
+    <!-- Bottom dot strip -->
+    <div class="dot-strip-outer">
+      <div class="ds"></div><div class="ds"></div><div class="ds"></div>
+      <div class="ds"></div><div class="ds"></div>
+    </div>
+
+    <!-- Footer name index -->
+    <div class="footer-names">
+      ADAMS · ALARA · ALISON · BEN · CARINA · CHRISTINA · COLIN · DAISY · ERICA ·
+      ICARUS · JESSIE · KATY · KELLY · KRISTEN · LARA · LISA · MICHAEL · NADIA ·
+      PATRICK · YUE
+    </div>
+
+  </div><!-- /#main -->
+
+  <!-- ── LIGHTBOX ── -->
+  <div class="lb" id="lb">
+    <div class="lb-inner">
+      <div class="lb-header">
+        <div>
+          <div class="lb-title" id="lb-title"></div>
+          <div class="lb-sub"   id="lb-sub"></div>
+        </div>
+        <button class="lb-close" id="lb-close">Close ✕</button>
+      </div>
+      <div class="lb-section-label">ALL SKETCHES</div>
+      <div class="lb-grid" id="lb-grid"></div>
+      <div class="lb-section" id="lb-inspo-section" style="display:none">
+        <div class="lb-section-label">REFERENCE PHOTO</div>
+        <img class="lb-inspo-img" id="lb-inspo-img" src="" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor-ring" id="ring"></div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
